@@ -18,6 +18,10 @@ class ApplicationController < Sinatra::Base
   	erb :index
   end
 
+  get "/signin" do
+    erb :signin
+  end
+
   post "/new_tweet" do
      puts params
      Tweet.new(params[:username], params[:message])
