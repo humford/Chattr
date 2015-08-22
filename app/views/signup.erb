@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Make an account</title>
 
@@ -88,16 +89,26 @@
     <div class="row">
       <div class="col-md-4"></div>
       <div class="col-md-4">
-        <h1 align="center">Login to Chattr</h1>
+        <h1 align="center">Register for Chattr</h1>
         <br>
-        <form method="POST" action="/login">
+        <form method="POST" action="/new_user">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">Username</span>
             <input type="text" name="username" class="form-control" placeholder="" aria-describedby="basic-addon1">
           </div>
           <br>
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Email</span>
+            <input type="text" name="email" class="form-control" placeholder="...@yourdomain.com" aria-describedby="basic-addon1">
+          </div>
           <br>
-          <input type="submit" value="Sign In" class="btn btn-primary">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Real Name</span>
+            <input type="text" name="real name" class="form-control" placeholder="John Doe" aria-describedby="basic-addon1">
+          </div>
+          <br>
+          <br>
+          <input type="submit" value="Sign Up" class="btn btn-primary">
         </form>
       </div>
       <div class="col-md-4"></div>

@@ -1,14 +1,6 @@
-class Tweet
-  attr_accessor :username, :message
-  ALL_TWEETS = []
-
-  def initialize(username, message)
-  	@username = username
-  	@message = message
-    ALL_TWEETS << self
-  end
-
-  def self.all
-    ALL_TWEETS
-  end
+class Tweet < ActiveRecord::Base
+  belongs_to :user
+  
+  validates :message,
+    presence: true
 end
