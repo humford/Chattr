@@ -1,6 +1,7 @@
 # Chattr
 A Twitter clone
-#TODO
+
+# TODO
 1. Add view_tweet
 2. Add hashtag functionality
 3. Add passwords
