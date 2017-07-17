@@ -1,5 +1,5 @@
 # Chattr
-A Twitter clone
+A Twitter clone. To be redployed to Heroku.
 
 # TODO
 1. Add view_tweet
